@@ -1,3 +1,21 @@
-.navegacion{
-    
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+@use 'sass:math';
+
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-align: center;
+        color: v.$blanco;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    @include m.tablet { 
+        flex-direction: row;
+        gap: math.div(v.$separacion, 4);
+     }
 }
