@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    font-family: v.$fuente_principal;
+    font-family: v.$fuenteSecundaria;
     font-size: 1.6rem;
     background-color: v.$cafeClaro;
 }
@@ -29,4 +29,9 @@ a{
 img{
     max-width: 100%;
     display: block;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
