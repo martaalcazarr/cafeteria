@@ -320,11 +320,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  background-color: #ebe7de;
 }
 
 p {
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 .contenedor {
@@ -363,7 +365,7 @@ h3 {
 }
 
 .bg-primario {
-  background-color: #E8505B;
+  background-color: #4b2718;
 }
 
 .header {
@@ -378,6 +380,7 @@ h3 {
 @media (min-width: 768px) {
   .header {
     padding: 3rem;
+    min-height: 50rem;
   }
 }
 @media (min-width: 1024px) {
@@ -398,6 +401,17 @@ h3 {
 .header .contenido-header {
   position: relative;
 }
+.header .contenido-header h1 {
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header h1 {
+    margin-top: 3rem;
+  }
+}
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
@@ -406,6 +420,7 @@ h3 {
 .nav-principal {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 .nav-principal a {
   text-align: center;
@@ -413,11 +428,24 @@ h3 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-principal a {
+    margin-bottom: 0;
+  }
+}
+.nav-principal a:hover {
+  color: #e09948;
+}
+.nav-principal a.activo {
+  color: #e09948;
 }
 @media (min-width: 768px) {
   .nav-principal {
     flex-direction: row;
-    gap: 1.25rem;
+    gap: 1rem;
+    margin-top: 0;
   }
 }
 
@@ -440,5 +468,17 @@ h3 {
   .barra .logo {
     width: 20rem;
     margin: 0;
+  }
+}
+
+.contenido-principal {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
   }
 }
