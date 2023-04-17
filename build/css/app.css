@@ -397,22 +397,6 @@ h3 {
   font-size: 3.2rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.bg-primario {
-  background-color: #4b2718;
-}
-
-.margin-negativo-10 {
-  margin-top: -10rem;
-}
-
-.bg-white {
-  background-color: #FFFFFF;
-}
-
 .header {
   padding: 5rem 0;
   position: relative;
@@ -470,6 +454,10 @@ h3 {
 
 .header-proceso {
   background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
 }
 
 .nav-principal {
@@ -810,4 +798,46 @@ h3 {
   width: 50%;
   height: 5px;
   background-color: #e09948;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/5;
+}
+@media (min-width: 480px) {
+  .contenido-menu {
+    aspect-ratio: 3/5;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    aspect-ratio: 16/6;
+    background-size: 35%;
+    background-position: bottom right;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #4b2718;
+}
+
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
 }
